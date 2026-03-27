@@ -37,6 +37,13 @@ export default function HeroSection() {
       {/* Grid Pattern Overlay */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNMzAgMzBtLTEgMGExIDEgMCAxIDAgMiAwYTEgMSAwIDEgMCAtMiAwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMSkiLz48L2c+PC9zdmc+')] opacity-40" />
 
+      {/* Decorative Sparkles */}
+      <div className="absolute top-20 left-10 w-1 h-1 bg-primary-400 rounded-full sparkle" />
+      <div className="absolute top-40 right-20 w-1.5 h-1.5 bg-accent-400 rounded-full sparkle" style={{ animationDelay: '0.5s' }} />
+      <div className="absolute bottom-32 left-1/4 w-1 h-1 bg-primary-300 rounded-full sparkle" style={{ animationDelay: '1s' }} />
+      <div className="absolute bottom-20 right-1/3 w-1.5 h-1.5 bg-accent-300 rounded-full sparkle" style={{ animationDelay: '1.5s' }} />
+      <div className="absolute top-1/3 right-10 w-1 h-1 bg-primary-400 rounded-full sparkle" style={{ animationDelay: '0.7s' }} />
+
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
         {/* Badge */}
@@ -44,7 +51,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center px-4 py-2 rounded-full glass mb-8"
+          className="inline-flex items-center px-4 py-2 rounded-full glass mb-8 badge-pulse"
         >
           <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2" />
           <span className="text-sm text-gray-300">🚀 Join 10,000+ students learning with SkillsNova</span>
@@ -58,7 +65,7 @@ export default function HeroSection() {
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
         >
           Master{' '}
-          <span className="gradient-text">High-Income Skills</span>{' '}
+          <span className="gradient-text text-shadow-glow">High-Income Skills</span>{' '}
           That Actually Pay
         </motion.h1>
 

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navItems = [
@@ -43,12 +44,18 @@ export default function Navbar() {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-3"
             >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-400 to-accent-500 flex items-center justify-center">
-                <span className="text-white font-bold text-xl">S</span>
+              <div className="relative w-10 h-10">
+                <Image
+                  src="/logo-icon.svg"
+                  alt="SkillsNova"
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </div>
-              <span className="text-xl font-bold gradient-text">SkillsNova</span>
+              <span className="text-xl font-bold gradient-text hidden sm:block">SkillsNova</span>
             </motion.div>
           </Link>
 

@@ -1,0 +1,52 @@
+<svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient circle -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8"/>
+      <stop offset="100%" style="stop-color:#d946ef"/>
+    </linearGradient>
+    <linearGradient id="logoGradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#a21caf"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Outer ring -->
+  <circle cx="200" cy="200" r="180" stroke="url(#logoGradientDark)" stroke-width="3" fill="none" opacity="0.3"/>
+  
+  <!-- Main circular background -->
+  <circle cx="200" cy="200" r="170" fill="url(#logoGradient)" filter="url(#glow)"/>
+  
+  <!-- Decorative inner circle -->
+  <circle cx="200" cy="200" r="150" fill="none" stroke="white" stroke-width="2" opacity="0.2"/>
+  
+  <!-- Stylized S shape -->
+  <path d="M 260 140 
+           C 260 110, 240 90, 200 90 
+           C 150 90, 120 120, 120 160 
+           C 120 200, 150 230, 200 230 
+           C 250 230, 280 260, 280 300 
+           C 280 340, 250 370, 200 370 
+           C 160 370, 140 350, 140 320" 
+        stroke="white" 
+        stroke-width="28" 
+        stroke-linecap="round" 
+        fill="none"
+        filter="url(#glow)"/>
+  
+  <!-- Accent dots -->
+  <circle cx="280" cy="120" r="8" fill="white" opacity="0.9"/>
+  <circle cx="120" cy="280" r="6" fill="white" opacity="0.7"/>
+  <circle cx="300" cy="200" r="4" fill="white" opacity="0.5"/>
+  
+  <!-- Sparkle effects -->
+  <path d="M 320 80 L 330 80 M 325 75 L 325 85" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 80 300 L 90 300 M 85 295 L 85 305" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+</svg>

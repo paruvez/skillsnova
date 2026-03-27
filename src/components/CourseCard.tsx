@@ -19,9 +19,8 @@ export default function CourseCard({ course, index }: CourseCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-100px' }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      whileHover={{ y: -8 }}
-      className={`relative glass rounded-2xl overflow-hidden card-hover ${
-        course.popular ? 'ring-2 ring-primary-500' : ''
+      className={`relative premium-card ${
+        course.popular ? 'ring-2 ring-primary-500 pulse-glow' : ''
       }`}
     >
       {/* Popular Badge */}

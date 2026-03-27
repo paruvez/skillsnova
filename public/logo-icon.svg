@@ -1,0 +1,21 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8"/>
+      <stop offset="100%" style="stop-color:#d946ef"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#iconGradient)"/>
+  
+  <!-- Stylized S -->
+  <path d="M 42 24 C 42 18, 38 14, 32 14 C 24 14, 20 18, 20 24 C 20 30, 24 34, 32 34 C 40 34, 44 38, 44 44 C 44 50, 40 54, 32 54 C 26 54, 22 50, 22 46" 
+        stroke="white" 
+        stroke-width="5" 
+        stroke-linecap="round" 
+        fill="none"/>
+  
+  <!-- Accent dot -->
+  <circle cx="44" cy="20" r="3" fill="white" opacity="0.9"/>
+</svg>
